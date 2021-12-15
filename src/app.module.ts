@@ -18,7 +18,7 @@ import { ConfigModule } from '@nestjs/config';
       database: process.env.DB_DATABASE,
       autoLoadModels: true,
       models: [Order, Account],
-      sync: { alter: true },
+      //sync: { alter: true },
     }),
     OrdersModule,
     AccountsModule,
