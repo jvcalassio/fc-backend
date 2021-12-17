@@ -44,6 +44,7 @@ export class OrdersService {
       where: {
         account_id: this.accountStorageService.account.id,
       },
+      order: [['created_at', 'DESC']],
     });
   }
 
